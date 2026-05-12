@@ -7,7 +7,7 @@
 
 ### Sales Distribution
 
-![Histogram](images/sales_histogram.png)
+![histogram](images/sales_histogram.png)
 
 Most products have lower sales, while a smaller number have high sales.
 
