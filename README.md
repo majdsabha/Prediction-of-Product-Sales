@@ -75,6 +75,63 @@ The tuned Random Forest model improved performance compared to the default model
 Based on the analysis and model results, retailers should focus on product and outlet characteristics that have the greatest impact on sales performance. Since Item_MRP showed the strongest relationship with sales, pricing strategies and product selection can be optimized to improve overall sales performance. Additionally, using predictive models can support inventory planning and business decision-making.
 
 
+## Model
+
+### Linear Regression Coefficients
+
+![Linear Regression Coefficients](images/linear_regression_coefficients.png)
+
+#### Interpretation of Coefficients
+
+**1. Item_MRP (Coefficient = 984.18)**
+This had the strongest impact on sales prediction. As product price increases, predicted sales also increase.
+
+**2. Outlet Identifier – OUT027 (Coefficient = 710.96)**
+Products sold in Outlet OUT027 tend to have higher sales compared to other outlets.
+
+**3. Outlet Type – Supermarket Type 3 (Coefficient = 710.96)**
+This outlet type is associated with higher sales and generally performs better than other outlet types.
+
+---
+
+### Tree-Based Model – Feature Importances
+
+![Random Forest Feature Importances](images/random_forest_feature_importances.png)
+
+#### Interpretation of Feature Importance
+
+**1. Item_MRP (Importance = 0.554)**
+Product price was the most important factor affecting sales prediction.
+
+**2. Outlet Type – Grocery Store (Importance = 0.313)**
+Store type strongly influenced sales performance.
+
+**3. Outlet Identifier – OUT027 (Importance = 0.061)**
+This outlet contributed positively to sales prediction.
+
+**4. Outlet Type – Supermarket Type 3 (Importance = 0.044)**
+This outlet category showed stronger sales performance.
+
+**5. Outlet Establishment Year (Importance = 0.023)**
+Store age had a smaller but noticeable effect on prediction.
+
+---
+
+## Recommendations
+
+* Focus on pricing strategies because Item_MRP had the strongest impact on sales.
+* Improve performance in lower-performing outlet types.
+* Study the characteristics of high-performing outlets.
+* Consider outlet age and store type when making business decisions.
+
+
+
+
+
+
+
+
+
 ## Limitations & Next Steps
 
 This project has some limitations, including the available dataset size and the limited number of features used for prediction. Future improvements may include testing additional machine learning models, applying advanced feature engineering techniques, and collecting more data to improve prediction accuracy and model performance.
